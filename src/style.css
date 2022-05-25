@@ -32,3 +32,37 @@ h3 {
     display: flex;
     gap: 7px;
 }
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    margin-top: 36px;
+    flex-direction: column;
+    width: 470px;
+}
+
+.form--container-inputs {
+    display: flex;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.form--input {
+    width: 230px;
+    height: 15px;
+    padding: 10px;
+    border: 1px solid rgba(213, 212, 216, 1);
+    border-radius: 5px;
+}
+
+.form--button {
+    padding: 10px;
+    background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+}

@@ -39,6 +39,7 @@ main {
 }
 
 .form {
+    font-family: 'Karla', sans-serif;
     display: flex;
     margin-top: 36px;
     flex-direction: column;

@@ -26,12 +26,31 @@ export default function Main(){
     }
 
     function handleChange(event){
-        const {name, value} = event.target
-        setMeme(prevMeme => ({
-            ...prevMeme,
-            [name]: value
+        const {name, value, src} = event.target
+        if(src === ""){
+            setMeme(prevMeme => ({
+                ...prevMeme,
+                [name]: value,
+            }))
+        } else{
+            setMeme(prevMeme => ({
+                ...prevMeme,
+                randomImg: src
         }))
     }
+    }
+
+
+    const memeList = allMemes.map(meme =>{
+        return(
+            <img 
+                key={meme.id}
+                src={meme.url}
+                alt={`Meme: ${meme.name}`}
+                onClick={handleChange}
+            />
+        )
+    }) 
 
     return(
         <main>
@@ -62,6 +81,12 @@ export default function Main(){
                 <img src={meme.randomImg} className="meme--image" alt="randomly generated meme"/>
                 <h2 className="meme--text top">{meme.topText}</h2>
                 <h2 className="meme--text bottom">{meme.bottomText}</h2>
+            </div>
+            <div className="meme--list">
+                <h1>Select other meme</h1>
+                <div className="meme--list-elements">
+                    {memeList}
+                </div>
             </div>
         </main>
     )

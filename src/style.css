@@ -67,7 +67,7 @@ main {
     color: white;
     border: none;
     border-radius: 5px;
-    margin-bottom: 36px;
+    margin-bottom: 26px;
 }
 
 .form--button:hover{
@@ -116,4 +116,39 @@ main {
 
 .top {
     top: 0;
+}
+
+.meme--list{
+    width: 70%;
+    text-align: center;
+    padding: 30px 15px;
+    margin: 46px 40px;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    border-radius: 5px;
+    color: white;
+}
+
+.meme--list h1{
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+.meme--list-elements {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.meme--list-elements img{
+    max-height: 200px;
+    border-radius: 5px;
+    transition-duration: .5s;
+}
+
+.meme--list-elements img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    margin:5px 5px 5px 5px;
+    gap: 20px;
 }

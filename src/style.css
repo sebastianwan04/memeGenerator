@@ -149,6 +149,7 @@ main {
 .meme--list-elements img:hover{
     cursor: pointer;
     transform: scale(1.1);
-    margin:5px 5px 5px 5px;
+    box-shadow: 0px 15px 60px 1px rgba(30, 30, 30, 0.75);
+    margin: 10px;
     gap: 20px;
 }
